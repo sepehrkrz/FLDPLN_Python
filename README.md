@@ -16,11 +16,9 @@ Using FLDPLN involves three general steps:
 
 A demonstration case based on Tuscaloosa, Alabama, is provided, with input files available as a [Package on hydroshare.org](https://www.hydroshare.org/resource/2ba43947ef6447beaf055349c883c96e/). Instructions for preparing a set of FLDPLN library files based on this package are outlined below.
 
-## Required Software Versions
+## Translated Functions
 
-- Python: [Latest Version](https://www.python.org/downloads/)
-- MATLAB or Octave (for reference)
-
+- **readbilheader.py:** Translated MATLAB function to extract header information from BIL files into Python.
 ## Steps to Contribute
 
 1. Clone this repository to your computer:
