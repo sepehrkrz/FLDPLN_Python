@@ -23,8 +23,8 @@ def read_header_info(hdr_content: str) -> Dict[str, Union[int, float, str]]:
     
     # Extracting relevant information using regular expressions
     header_info['bytord'] = 0 if re.search(r'BYTEORDER\s+I', hdr_content) else 1
-    header_info['rows'] = int(re.search(r'NROWS\s+(\d+)', hdr_content).group(1))
-    header_info['cols'] = int(re.search(r'NCOLS\s+(\d+)', hdr_content).group(1))
+    header_info['r'] = int(re.search(r'NROWS\s+(\d+)', hdr_content).group(1))
+    header_info['c'] = int(re.search(r'NCOLS\s+(\d+)', hdr_content).group(1))
     header_info['bands'] = int(re.search(r'NBANDS\s+(\d+)', hdr_content).group(1))
     nodata_match = re.search(r'NODATA\s+([-+]?\d*\.\d+|\d+)', hdr_content)
     header_info['nodata'] = float(nodata_match.group(1)) if nodata_match else None
