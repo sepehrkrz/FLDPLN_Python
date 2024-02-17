@@ -19,6 +19,7 @@ A demonstration case based on Tuscaloosa, Alabama, is provided, with input files
 ## Translated Functions
 
 - **readbilheader.py:** Translated MATLAB function to extract header information from BIL files into Python.
+- - **scanbil.py:** Python script to scan an ERDAS or ESRI BIL file to extract minimum, maximum, and background values.
 ## Steps to Contribute
 
 1. Clone this repository to your computer:
